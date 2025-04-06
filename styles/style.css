@@ -17,10 +17,43 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  padding: 133px 30px;
+  justify-content: center; 
 }
 
 .content{
   display: grid;
+  width: 1140px;
+  grid-template-columns: 711px 399px;
+  grid-template-rows: 534px;
+  column-gap: 30px;
+  align-items: end;
+}
+
+.result__video-container{
+  width: 711px;
+  height: 386px;
+  margin-bottom: 16px;
+}
+
+.result__video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.search-form{
+  display: flex;
+  column-gap: 40px;
+  align-items: flex-start;
+}
+
+.search-form__fieldset{
+  flex-grow: 1;
+}
+
+video{
+width: 100%;
 }
 
 h1,
@@ -35,6 +68,40 @@ blockquote,
 fieldset {
   margin: 0;
   padding: 0;
+}
+
+.content__details{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 26px;
+}
+
+.content__list-container{
+  overflow: auto;
+}
+
+.content__list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.content__video-card{
+  display: flex;
+  align-items: flex-start;
+}
+
+.content__video-card-thumbnail{
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content__video-card-description-container{
+  flex-grow: 1;
 }
 
 ul,
