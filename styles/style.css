@@ -106,7 +106,13 @@ fieldset {
 
 .content__video-card{
   display: flex;
+  width: 100%;
   align-items: flex-start;
+}
+
+.content__video-card-description-container{
+  flex-grow: 1;
+  overflow: hidden;
 }
 
 .content__video-card-title{
@@ -116,18 +122,15 @@ fieldset {
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
+  overflow: hidden;
   text-overflow: ellipsis;
-} 
+}
 
 .content__video-card-thumbnail{
   width: 194px;
   height: 103px;
   object-fit: cover;
   object-position: center;
-}
-
-.content__video-card-description-container{
-  flex-grow: 1;
 }
 
 .title{
